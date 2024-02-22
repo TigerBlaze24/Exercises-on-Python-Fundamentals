@@ -38,3 +38,5 @@ print(b1+i1)
 print(b1+s1)
 print(b1+f1)
 #da errore perchè alcune espressioni sono irrealizzabili
+
+a=int (input(

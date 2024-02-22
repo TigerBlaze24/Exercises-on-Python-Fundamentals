@@ -22,3 +22,5 @@ from math import radians
 r=6371
 d= 2 *r *asin( sqrt(sin( 1/2*(ϕ2-ϕ1))**2+ cos(ϕ1) *cos(ϕ2)*sin( 1/2*(λ2-λ1))**2)) 
 print(d)
+
+
