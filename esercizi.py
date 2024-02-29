@@ -1,5 +1,4 @@
-y =23
+z =23
 for x in range (1,11) :
-    print(y*x)
+    print(z*x)
     #es:scrivi la tebella del 23
-    
