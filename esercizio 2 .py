@@ -25,4 +25,23 @@ for i in [7, 8, 9]:
     print(i)
     #coi il for fà stampare gli elementi della collezzione
 
+## Costruire due liste, la prima che contiene i numeri pari fino a 1000
+# la seconda che contiene i numeri dispari fino a 1000
+# a partire dalle prime due liste, 
+# costruire una terza lista che contiene prima tutti i pari e poi tutti i dispari
+    
+listaPari=[]
+  
+for x in range (0,101,2):
+    if(x%2 ==0):
+     print(x)
+
+listaDispari=[]
+
+for y in range (0, 101,2):
+     
+
+
+
+
 
