@@ -52,3 +52,7 @@ end = time.time_ns()
 print(
     f"Il tempo richiesto per cercare è: {(end-start)/1000000000} e ne ha trovati {trovati}"
 )
+#il set è più veloce della lista perchè mantiene i numeri all'interno di esso
+
+print(hash("mario")%17)
+#esempio di hash
