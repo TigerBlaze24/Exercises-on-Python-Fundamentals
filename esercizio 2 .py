@@ -38,10 +38,4 @@ for x in range (0,101,2):
 
 listaDispari=[]
 
-for y in range (0, 101,2):
-     
-
-
-
-
 
