@@ -12,6 +12,6 @@ print(colorecasuale())
 print(colorecasuale())
     
 
-#stabilisce qual'è il numero mafgggiore:
+#stabilisce qual'è il numero maggiore:
 print(max(10,20))
 
