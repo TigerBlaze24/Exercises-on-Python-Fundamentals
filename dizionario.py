@@ -61,6 +61,6 @@ print(dizionario)
 
 
 # Come posso stampare/gestire singolarmente tutti gli elementi di un dizionario?
-# Cosa farebbe un pythonista?
+# Così:
 for e in dizionario:
     print("Key: ", e, "Value: ", dizionario[e])
