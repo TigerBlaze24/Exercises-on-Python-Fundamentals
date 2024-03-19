@@ -64,3 +64,92 @@ print(dizionario)
 # Così:
 for e in dizionario:
     print("Key: ", e, "Value: ", dizionario[e])
+#########################################################
+    import json
+
+#Per leggere un file json 
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+
+"""
+print(len(worldcup))
+
+print(worldcup[1200])
+print(worldcup[1200]['DateOfBirth'])
+
+"""
+
+#questi nesercizi sono fatti con i dizionari e operazioni su lista
+
+# 1) Contare quanti calciatori hanno giocato per l'Italia
+
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+calcita = 0
+for i in worldcup:
+    if i["Team"] == "ITA":
+        calcita += 1
+    elif i["Team"] == "Italy":
+        calcita += 1
+    else:
+        continue
+print("Calciatori italiani: ", calcita)
+
+# 2) Contare quanti calciatori hanno giocato per il Brasile
+
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+calcbra = 0
+for i in worldcup:
+    if i["Team"] == "BRA":
+        calcbra += 1
+    elif i["Team"] == "Brazil":
+        calcbra += 1
+    else:
+        continue
+print("Calciatori brasiliani: ", calcbra)
+
+# 3) Contare quanti calciatori hanno giocato per l'Argentina
+
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+calcarg = 0
+for i in worldcup:
+    if i["Team"] == "ARG":
+        calcarg += 1
+    elif i["Team"] == "Argentina":
+        calcarg += 1
+    else:
+        continue
+print("Calciatori argentini: ", calcarg)
+
+# 4) Indicare quali calciatori hanno giocato sia per il Brasile, sia per l'Italia
+
+filejson = open("all-world-cup-players.json", "r")
+worldcup = json.load(filejson)
+filejson.close()
+calcbra = set()
+calcita = set()
+
+for i in worldcup:
+    if i["Team"] == "Brazil":
+        x = i.get("FullName")
+        calcbra.add(x)  
+    elif i["Team"] == "BRA":
+        x = i.get("FullName")
+        calcbra.add(x)  
+
+for i in worldcup:
+    if i["Team"] == "Italy":
+        x = i.get("FullName")
+        calcita.add(x)  
+    elif i["Team"] == "ITA":
+        x = i.get("FullName")
+        calcita.add(x)
+calcbra.intersection_update(calcita)
+
+print("i giocatori che hanno giocato sia per il Brasile che per l'italia sono: ",calcbra)
