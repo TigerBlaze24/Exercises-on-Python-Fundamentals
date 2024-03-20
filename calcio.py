@@ -1,3 +1,5 @@
+#Quanti calciatori hanno giocato per l'italia?
+
 import json
 
 filejson = open("es jason allworld-cup-players.json", "r")
@@ -12,3 +14,19 @@ for i in worldcup:
     else:
         continue
 print("Calciatori italiani: ", calcita)
+
+#6)
+calciatore_piu_giovane = ""
+eta_piu_giovane = 200
+for giocatore in worldcup:
+    campionato = giocatore["Year"]
+    data_di_nascita = giocatore['DateOfBirth']
+    if data_di_nascita:
+        anno_di_nascita = int(data_di_nascita.split('-')[0])
+        eta = campionato - anno_di_nascita
+
+
+        if eta < eta_piu_giovane:
+            eta_piu_giovane = eta
+            calciatore_piu_giovane = giocatore['FullName']
+print("Il calciatore più giovane è:", calciatore_piu_giovane)
