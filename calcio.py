@@ -29,4 +29,4 @@ for giocatore in worldcup:
         if eta < eta_piu_giovane:
             eta_piu_giovane = eta
             calciatore_piu_giovane = giocatore['FullName']
-print("Il calciatore più giovane è:, calciatore_piu_giovane")
+print("Il calciatore più giovane è:" , calciatore_piu_giovane)
