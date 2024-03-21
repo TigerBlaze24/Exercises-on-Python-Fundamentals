@@ -16,7 +16,7 @@ for i in worldcup:
 print("Calciatori italiani: ", calcita)
 
 #6)
-calciatore_piu_giovane = ""
+calciatore_piu_giovane = None
 eta_piu_giovane = 200
 for giocatore in worldcup:
     campionato = giocatore["Year"]
@@ -28,5 +28,5 @@ for giocatore in worldcup:
 
         if eta < eta_piu_giovane:
             eta_piu_giovane = eta
-            calciatore_piu_giovane = giocatore['FullName']
-print("Il calciatore più giovane è:" , calciatore_piu_giovane)
+            calciatore_piu_giovane = giocatore
+print("Il calciatore più giovane è:" , calciatore_piu_giovane,eta_piu_giovane)
