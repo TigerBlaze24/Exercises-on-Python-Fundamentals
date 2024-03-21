@@ -17,7 +17,7 @@ print("Calciatori italiani: ", calcita)
 
 #6)
 calciatore_piu_giovane = None
-eta_piu_giovane = 200
+eta_piu_giovane =200
 for giocatore in worldcup:
     campionato = giocatore["Year"]
     data_di_nascita = giocatore['DateOfBirth']
