@@ -1,6 +1,9 @@
 # Esempio 1
 # Leggere da input una stringa, se minore di "lettera", stampare la stringa "minore", se maggiore di "lettera" e minore di "tocco", stampare "intermedia", se maggiore di "tocco" e minore di "what" stampare "maggiore", altrimenti stampare "massima"
 
+import random
+
+
 a = 10
 b = 20
 if a > b:
@@ -102,3 +105,15 @@ while a > 0:
     a = a - 1
 else:
     print("Ho terminato!")
+###GENERA UNA LISTA CHE CONTIENE NUMERI CASUALI DA 1 A N
+def generalista (N):
+    ls=[]
+    for i in range(N):
+        v= random.randint(1,N)
+        ls.append(v)
+    return ls
+print(generalista(10))
+#esempi per copiare un elemento
+#es1:l2 copy.copy(l1)->in questo caso copia solo l'elemento
+#es2:l3=copy.decopy(l1)
+ 
