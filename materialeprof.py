@@ -82,6 +82,7 @@ elif cmd == 0:
 else:
     print("Comando non riconosciuto")
 
+
 print("AAAA")
 if a > b:
     pass
@@ -115,5 +116,5 @@ def generalista (N):
 print(generalista(10))
 #esempi per copiare un elemento
 #es1:l2 copy.copy(l1)->in questo caso copia solo l'elemento
-#es2:l3=copy.decopy(l1)
+#es2:l3=copy.decopy(l1)-> con questo comando copia l'elemento e i suoi livelli
  
