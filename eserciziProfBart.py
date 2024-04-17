@@ -42,8 +42,3 @@ print("ciao bello" , nomi [2] , "vieni al cinema?")
 print("ciao splendore" , nomi [3] , "vieni dal paninaro stasera?")
 print("ciao bellssimo" , nomi [4] , "con me dal parrucchiere?")
 #da finire e poi scriverli
-
-
-
-
-
