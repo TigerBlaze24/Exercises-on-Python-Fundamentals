@@ -6,3 +6,4 @@ x, y = 2, 3
 output:float =area_rettangolo(2,3)
 print(f"l'area del reattangolo con x ={x} e y={y} è {output}")
 #questo esercizio è un esempio di funzione
+cfgghj
